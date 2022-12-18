@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anokha-2023 Registration</title>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+      function check(){
+          let name = document.forms.registration.tname.value;
+          let members = document.forms.registration.No_of_team_member.value;
+          var letters = /^[1-4]+$/;
+          let email = document.forms.registration.mail.value;
+          var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+          let num = document.forms.registration.sera.value;
+          let cat = document.forms.registration.Category.value;
+
+          if(name==""){
+            alert("Please fill out Team name");
+            return false;
+          }
+          if(members ==""){
+           alert("Please enter the number of team members");
+           return false;
+          }
+          if(email==""){
+            alert("Please enter correct email address");
+            return false;
+          }
+          if(num==""){
+            alert("Please enter contact number");
+            return false;
+          }
+          if(cat==""){
+            alert("Please enter the category");
+            return false;
+          }
+
+           return true;
+      }
+    </script>
+</head>
+<body style="background-color: #343a40;">
+  <header class="logo">
+    <img src="/assets/imgs/logo1.png" alt="" width="150" height="50">
+  </header>
+    <center><h1 style="color: aliceblue;"><i>Anokha 2023-Registration </i></h1></center>
+    <fieldset class="box">
+      <form onsubmit="return check()" name="registration">
+          <p style="color: darkmagenta;">
+            Team Name : &nbsp; <input type="text" name="tname">
+          </p>
+          <p style="color:darkmagenta;">
+            No of Team Members : <select name="No_of_team_member" id="team_member">
+              <option value="">--Select--</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select
+          </p>
+          <p style="color: darkmagenta;">
+            Email id : <input type="email" name="mail">
+          </p>
+          <p style="color: darkmagenta">
+            Contact No : <input type="number" name="sera">
+          </p>
+          <p style="color: darkmagenta;">
+            Project Category : 
+            <select name="Category" id="Category">
+              <option value="">--Select--</option>
+              <option value="Category_1">Computer Science</option>
+              <option value="Category_2">Chemical </option>
+              <option value="Category_3">Mechanical</option>
+              <option value="Category 4">Electronic</option>
+              <option value="Category 5">Aerospace</option>
+            </select>
+          </p>
+          <center>
+           <a href="/Successful.html"><button>Register</button></a>
+          </center>
+          </form>
+    </fieldset>
+    <a href="/index.html"><button class="btn">Home</button></a>
+    <footer style="background-color: aliceblue;" class="foot">
+      <br><br>
+      <center>&#169 Amrita Vishwa Vidyapeetham</center>
+      <br><br>
+    </footer>
+</body>
+</html>

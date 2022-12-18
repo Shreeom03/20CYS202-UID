@@ -1,0 +1,53 @@
+.box {
+    width: 300px;
+    height: 225px;
+    background-color:aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .box1{
+    width: 400px;
+    height: 150px;
+    background-color:rgb(210, 214, 214);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  .logo{
+    height: 25px;
+    width: 100px;
+  }
+
+  .imp{
+    float: left;
+  }
+  .foot{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+  .btn{
+    position: absolute;
+    bottom:20%;
+    left:47%;
+    background-color: rgb(161, 030, 70);
+  border: none;
+  color:rgb(7, 6, 6);
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+    
+  }
+  .btn:hover {
+    background-color:rgb(234, 234, 229);
+  }
+  
+  .btn:active {
+    background-color: rgb(235, 235, 230);
+  }
